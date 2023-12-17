@@ -1,49 +1,76 @@
-.exercises-container {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap");
+
+* {
+  font-family: "Noto Sans Thai", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: lightgrey;
+  background-image: linear-gradient(
+    to right top,
+    #2a2929,
+    #333131,
+    #3c3a3a,
+    #454343,
+    #4e4c4c
+  );
 }
 
 /* Style for the article container */
 .article {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  background: linear-gradient(to bottom, #e6f2ff, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 40px;
+  width: 50%;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #0d296a,
+    #3a349c,
+    #7533c8,
+    #bb12eb
+  );
+  color: white;
 }
 
-/* Style for the article title */
 .article-title {
-  font-size: 24px;
+  font-size: 65px;
   margin-top: 0;
-  color: #333;
-  text-shadow: 1px 1px #fff;
 }
 
-/* Style for the article body */
 .article-body {
-  font-size: 18px;
+  text-align: center;
+  font-size: 36px;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #555;
-  text-shadow: 1px 1px #fff;
 }
 
-/* Style for the article link */
 .article-link {
-  color: #007bff;
-  text-decoration: none;
+  font-size: 36px;
+  color: white;
   transition: all 0.2s ease-in-out;
 }
 
-/* Style for the article link when hovered over */
 .article-link:hover {
   color: #0062cc;
   text-decoration: underline;
 }
+
+.bootcamp-start-time {
+  font-size: 36px;
+}
+
+/* Login container style */
 
 .login-container {
   display: flex;
@@ -52,13 +79,17 @@
   background-color: #f5f5f5;
   color: grey;
   margin-top: 40px;
+  width: 50%;
+  border-radius: 10px;
 }
 
 .login-form {
   background-color: #fff;
   padding: 40px;
   border-radius: 10px;
+  width: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #2a2929;
 }
 
 .login-form h2 {
@@ -92,7 +123,14 @@
   margin-top: 10px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #0d296a,
+    #3a349c,
+    #7533c8,
+    #bb12eb
+  );
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);

@@ -12,6 +12,12 @@ function getCurrentDateTime() {
 }
 
 function IntroSection() {
+  const articleStyles = {
+    container: "article",
+    title: "article-title",
+    body: "article-body",
+    link: "article-link"
+  }
   return (
     <div>
       <h3>TechUp Thailand</h3>
@@ -41,7 +47,7 @@ function LoginForm() {
 
 function App() {
   return (
-    <div className="exercises-container">
+    <div className="app">
       <IntroSection />
       <LoginForm />
     </div>
